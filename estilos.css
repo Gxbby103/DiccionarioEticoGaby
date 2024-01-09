@@ -1,0 +1,261 @@
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(250, 250, 250);
+    background: linear-gradient( #000000 , #5b78ed);
+   }
+   
+   header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 4em;
+    height: 6em;
+    color: #fff;
+   }
+   
+   /* ... Resto de tu cÃ³digo CSS ... */
+   
+   /* Hacer que las imÃ¡genes sean responsivas */
+   img {
+    max-width: 100%;
+    height: auto;
+   }
+   
+   /* Media Queries */
+   @media screen and (max-width: 600px) {
+    header {
+      flex-direction: column;
+    }
+    ul {
+      margin-right: 0;
+    }
+    .books-fall {
+      height: 100vh;
+    }
+    section {
+      gap: 0 5em;
+    }
+    section p {
+      font-size: 1em;
+      left: 0;
+    }
+    section img{
+      width: 100%;
+    }
+   }
+   
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(250, 250, 250);
+    background: linear-gradient( #000000 , #5b78ed);
+ }
+ 
+ header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 4em;
+    height: 6em;
+    color: #fff;
+ }
+ 
+ .logo {
+    font-size: 2em;
+    font-weight: 800;
+ }
+ 
+ ul {
+    margin-right: 14em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 1.5em;
+    list-style: none;
+ }
+ 
+ li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 6000;
+ }
+ 
+ li a:hover {
+    border-bottom: 0.1em solid #fff;
+ }
+ 
+ .field-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 0.3em;
+ }
+ 
+ .field-search input{
+    border-radius: 1em;
+    padding: 0.3em 1em;
+    border: 0.2em solid #fff;
+ }
+ 
+ .field-search img {
+    margin-top: 0.2em;
+    cursor: pointer;
+    background: #fff;
+    border-radius: 0.99em;
+    width: 8%;
+ }
+ 
+ .books-fall {
+    position: absolute;
+    width: 100%;
+    height: 85vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    pointer-events: none;
+ }
+ 
+ .books {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+ }
+ 
+ .books img {
+    width: 5em;
+ }
+ 
+ .books div {
+    position: absolute;
+    display: block;
+ }
+ .books div:nth-child(1) {
+    left: 20%;
+    animation: booksfall 12s linear infinite;
+}
+
+.books div:nth-child(2) {
+    left: 50%;
+    animation: booksfall 14s infinite linear;
+}
+
+.books div:nth-child(3) {
+    left: 70%;
+    animation: booksfall 12s infinite linear;
+}
+
+.books div:nth-child(4) {
+    left: 5%;
+    animation: booksfall 15s infinite linear;
+}
+
+.books div:nth-child(5) {
+    left: 85%;
+    animation: booksfall 11s infinite linear;
+}
+
+.books div:nth-child(6) {
+    left: 90%;
+    animation: booksfall 10s infinite linear;
+}
+
+.books div:nth-child(7) {
+    left: 15%;
+    animation: booksfall 9s infinite linear;
+}
+
+.books div:nth-child(8) {
+    left: 60%;
+    animation: booksfall 11s infinite linear;
+}
+.books div:nth-child(9) {
+    left: 20%;
+    animation: booksfall 15s linear infinite;
+}
+
+.books div:nth-child(10) {
+    left: 50%;
+    animation: booksfall 16s infinite linear;
+}
+
+.books div:nth-child(11) {
+    left: 70%;
+    animation: booksfall 8s infinite linear;
+}
+
+.books div:nth-child(12) {
+    left: 5%;
+    animation: booksfall 13s infinite linear;
+}
+
+.books div:nth-child(13) {
+    left: 85%;
+    animation: booksfall 11s infinite linear;
+}
+
+.books div:nth-child(14) {
+    left: 90%;
+    animation: booksfall 12s infinite linear;
+}
+
+.books div:nth-child(15) {
+    left: 15%;
+    animation: booksfall 14s infinite linear;
+}
+
+.books div:nth-child(16) {
+    left: 60%;
+    animation: booksfall 9s infinite linear;
+}
+@keyframes booksfall {
+    0%{
+        opacity: 0;
+        top: -10%;
+        transform: translateX(20px);
+    }
+    10%{
+        opacity: 1;
+    }
+    20%{
+        transform: translateX(-20px);
+    }
+    40%{
+        transform: translateX(-20px);
+    }
+    60%{
+        transform: translateX(20px);
+    }
+    80%{
+        transform: translateX(-20px);
+    }
+    100%{
+        top: 110%;
+        transform: translateX(-20px);
+    }
+}
+ /* AquÃ­ van las demÃ¡s reglas CSS */
+ 
+ section {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 0 17em;
+ }
+ 
+ section p {
+    font-size: 1.5em;
+    color: #fff;
+    position: relative;
+    left: 60px;
+    text-align: center;
+ }
+ 
+ section img{
+    width: 35em;
+ }
